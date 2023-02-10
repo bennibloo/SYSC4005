@@ -12,7 +12,7 @@ class Product:
     def get_id(self):
         return self.id
 
-    # Return the tpe of the Product (i.e., P1, P2, or P3)
+    # Return the type of the Product (i.e., P1, P2, or P3)
     def get_type(self):
         return self.type
 
