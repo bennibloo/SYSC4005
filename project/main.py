@@ -25,8 +25,8 @@ def main():
     w2.receiveComponent2(c2)
     w2.receiveComponent1(c1)
     w2.receiveComponent2(c2)
-    w1.printBuffer()
-    
+    w2.printBuffer()
+
 
 if __name__ == "__main__":
     main()
