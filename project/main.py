@@ -5,6 +5,54 @@ from Workstation import *
 import csv
 import os
 
+'''
+clock
+
+'''
+def init():
+    pass
+
+'''
+Processes the arrival of a component to an entity (inspector/workstation)
+@param clock
+@param component
+'''
+def put():
+    #Update clock
+
+    #Arrival to inspector
+    #Identify that the workstation buffer for the inspector is not full
+    #If it is full, add the component into the queue
+    #If it is not full, service the component and schedule departure
+
+    #Arrival to workstation buffer
+    #Check that buffer has all components (c1, c2, c3)
+    #If it has all components, service and schedule departure
+    #If not, it is blocked (increment total busy and no product created)
+    pass
+
+'''
+Retrieves the imminent event of the system. Is only called while the inspector is not not blocked and/or workstation buffer is not empty
+@param clock
+@param component
+'''
+def get():
+    #From the queue, retrieve the latest event
+
+    #Update the clock
+
+    #If the destination of the component is to the inspector
+
+    #If the destination of the component is to the workstation buffer
+    pass
+
+''' 
+@param component
+'''
+def scheduleDeparture():
+    #Calculate departure by the current clock time and the service time required for the component
+    pass
+
 def main():
     print("Hello World")
     w1 = Workstation(Component.TYPE_1)
