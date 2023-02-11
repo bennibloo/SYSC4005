@@ -5,6 +5,41 @@ from Workstation import *
 import csv
 import os
 
+class Simulation:
+    
+    def scheduleArrival():
+        #Create and put arrival event into FEL
+        pass
+
+    def processArrival():
+        #Check workstation buffer of inspector's associated workstations. If the buffer is full, inspector waits
+
+        #If component needs to be inspected, send to inspector
+
+        #If component has been inspected, send to workstation
+        pass
+
+    def processDeparture():
+        #If the product is completed, then schedule the next component in the FEL
+        #Increment the number of depatures (products made)
+        pass
+
+    def simulation():
+        #while number of departures (products made) is less than the total number of (components/2)
+
+        #Retrieve imminent event
+
+        #Update clock based on the time scheduled for the event
+
+        #If the event is an arrival
+            #Process arrival
+
+            #Schedule arrival
+
+        #Otherwise, the event is a departure
+            #Process departure
+        pass
+
 def main():
     print("Hello World")
     w1 = Workstation(Component.TYPE_1)
