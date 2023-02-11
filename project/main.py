@@ -5,53 +5,40 @@ from Workstation import *
 import csv
 import os
 
-'''
-clock
+class Simulation:
+    
+    def scheduleArrival():
+        #Create and put arrival event into FEL
+        pass
 
-'''
-def init():
-    pass
+    def processArrival():
+        #Check workstation buffer of inspector's associated workstations. If the buffer is full, inspector waits
 
-'''
-Processes the arrival of a component to an entity (inspector/workstation)
-@param clock
-@param component
-'''
-def put():
-    #Update clock
+        #If component needs to be inspected, send to inspector
 
-    #Arrival to inspector
-    #Identify that the workstation buffer for the inspector is not full
-    #If it is full, add the component into the queue
-    #If it is not full, service the component and schedule departure
+        #If component has been inspected, send to workstation
+        pass
 
-    #Arrival to workstation buffer
-    #Check that buffer has all components (c1, c2, c3)
-    #If it has all components, service and schedule departure
-    #If not, it is blocked (increment total busy and no product created)
-    pass
+    def processDeparture():
+        #If the product is completed, then schedule the next component in the FEL
+        #Increment the number of depatures (products made)
+        pass
 
-'''
-Retrieves the imminent event of the system. Is only called while the inspector is not not blocked and/or workstation buffer is not empty
-@param clock
-@param component
-'''
-def get():
-    #From the queue, retrieve the latest event
+    def simulation():
+        #while number of departures (products made) is less than the total number of (components/2)
 
-    #Update the clock
+        #Retrieve imminent event
 
-    #If the destination of the component is to the inspector
+        #Update clock based on the time scheduled for the event
 
-    #If the destination of the component is to the workstation buffer
-    pass
+        #If the event is an arrival
+            #Process arrival
 
-''' 
-@param component
-'''
-def scheduleDeparture():
-    #Calculate departure by the current clock time and the service time required for the component
-    pass
+            #Schedule arrival
+
+        #Otherwise, the event is a departure
+            #Process departure
+        pass
 
 def main():
     print("Hello World")
