@@ -6,7 +6,6 @@ import csv
 import os
 
 def main():
-    print("Hello World")
     w1 = Workstation(Component.TYPE_1)
     w2 = Workstation(Component.TYPE_1, Component.TYPE_2)
     w3 = Workstation(Component.TYPE_1, Component.TYPE_3)
