@@ -6,14 +6,14 @@ import csv
 import os
 
 def main():
-    w1 = Workstation(Component.TYPE_1)
-    w2 = Workstation(Component.TYPE_1, Component.TYPE_2)
-    w3 = Workstation(Component.TYPE_1, Component.TYPE_3)
-    i1 = Inspector(1)
-    i2 = Inspector(2)
     c1 = Component.TYPE_1
     c2 = Component.TYPE_2
     c3 = Component.TYPE_3
+    i1 = Inspector(1)
+    i2 = Inspector(2)
+    w1 = Workstation(c1)
+    w2 = Workstation(c1, c2)
+    w3 = Workstation(c1, c3)
 
     # Testing methods
     # i1.inspectComponent(c1)
