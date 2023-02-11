@@ -17,17 +17,21 @@ def main():
     c3 = Component.TYPE_3
 
     # Testing methods
-    i1.inspectComponent(c1)
-    i2.inspectComponent(c2)
-    i2.inspectComponent(c3)
+    # i1.inspectComponent(c1)
+    # i2.inspectComponent(c2)
+    # i2.inspectComponent(c3)
 
-    w2.receiveComponent1(c1)
-    w2.receiveComponent2(c2)
-    w2.receiveComponent1(c1)
-    w2.receiveComponent2(c2)
-    w2.receiveComponent1(c1)
-    w2.receiveComponent2(c2)
-    w2.printBuffer()
+    # w2.receiveComponent1(c1)
+    # w2.receiveComponent2(c2)
+    # w2.receiveComponent1(c1)
+    # w2.receiveComponent2(c2)
+    # w2.receiveComponent1(c1)
+    # w2.receiveComponent2(c2)
+    # w2.printBuffer()
+    # w2.createProduct()
+    # w2.printBuffer()
+    # w2.createProduct()
+    # w2.printBuffer()
 
     #Converts dat files to CSV files
     #NOTE: the extracted project folder has to be on the same directory level as main.py

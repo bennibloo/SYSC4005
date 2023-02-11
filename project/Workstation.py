@@ -9,6 +9,9 @@ class Workstation:
         self.componentB = component2
 
     def receiveComponent1(self, component):
+        if(self.componentA != component):
+            print("Workstation cannot accept this component in the first buffer")
+            return
         if(self.buffer1.full()):
             print("queue is full")
             return False
@@ -19,6 +22,10 @@ class Workstation:
 
     def receiveComponent2(self, component):
         if(self.componentB == None):
+            print("Workstation only has 1 component type")
+            return
+        if(self.componentB != component):
+            print("Workstation cannot accept this component in the second buffer")
             return
         if(self.buffer2.full()):
             print("queue is full")
@@ -27,6 +34,16 @@ class Workstation:
         self.buffer2.put(component)
         print("component added")
         return True
+    
+    def createProduct(self):
+        if(not (self.buffer1.empty()) and not (self.buffer2.empty())):
+            # Add processing time here
+            # Increment number of products added here
+            self.buffer1.get()
+            self.buffer2.get()
+            print("Product created")
+        else:
+            print("Insufficient components to create product")
 
     def printBuffer(self):
         print(list(self.buffer1.queue))
