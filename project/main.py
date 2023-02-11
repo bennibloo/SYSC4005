@@ -32,6 +32,15 @@ def main():
     # w2.createProduct()
     # w2.printBuffer()
 
+    # w1.receiveComponent1(c1)
+    # w1.receiveComponent1(c1)
+    # w1.receiveComponent1(c1)
+    # w1.printBuffer()
+    # w1.createProduct()
+    # w1.printBuffer()
+    # w1.createProduct()
+    # w1.createProduct()
+
     #Converts dat files to CSV files
     #NOTE: the extracted project folder has to be on the same directory level as main.py
     convertFileToCsv("./Project/servinsp1.dat")

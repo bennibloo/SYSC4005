@@ -36,11 +36,16 @@ class Workstation:
         return True
     
     def createProduct(self):
-        if(not (self.buffer1.empty()) and not (self.buffer2.empty())):
+        if(self.componentB != None and not self.buffer1.empty() and not self.buffer2.empty()):
             # Add processing time here
             # Increment number of products added here
             self.buffer1.get()
             self.buffer2.get()
+            print("Product created")
+        elif(self.componentB == None and not self.buffer1.empty()):
+            # Add processing time here
+            # Increment number of products added here
+            self.buffer1.get()
             print("Product created")
         else:
             print("Insufficient components to create product")
