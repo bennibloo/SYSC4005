@@ -2,7 +2,7 @@ import LCG
 import random
 
 class CLCM:
-    def generateCLCM(LCG1:LCG, LCG2: LCG, numberOfValues: int, *args):
+    def generateCLCM(LCG1:LCG, LCG2: LCG, *args, numberOfValues: int):
         #Find number of LCGs used
         numberOfLCG = 2 + len(args)
 
